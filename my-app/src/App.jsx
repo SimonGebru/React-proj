@@ -2,18 +2,23 @@ import { useState } from "react";
 import "./App.css";
 import Footer from "./Footer";
 import Header from "./Header";
+import ToggleMessage from "./Toggle";
+import Counter from "./Counter";
 
 function App() {
-  const [count, setCount] = useState(0);
+ 
 
   return (
     <>
+    
       <Header />
       <main>
-        <h1>Hello Mr</h1>
-        <p>Hur har din dag varit?</p>
+        <h1>Hej, Simon!</h1>
+        <input type="text" placeholder="   Berätta om din dag" />
       </main>
+      <Counter />
       <Footer />
+      <ToggleMessage />
     </>
   );
 }
